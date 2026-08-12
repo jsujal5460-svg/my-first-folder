@@ -6,4 +6,14 @@ function scrollGallery(){
 
     });
 
-}
+}const cartButton = document.getElementById("cartButton");
+const cartPanel = document.getElementById("cartPanel");
+const closeCart = document.getElementById("closeCart");
+
+cartButton.addEventListener("click", function () {
+    cartPanel.classList.add("open");
+});
+
+closeCart.addEventListener("click", function () {
+    cartPanel.classList.remove("open");
+});
