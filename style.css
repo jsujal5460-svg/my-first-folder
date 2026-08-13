@@ -212,24 +212,25 @@ footer{
 
     padding:30px;
 
-}#cartButton {
-    background: transparent;
+#cartButton {
+    background: none;
     color: white;
-    border: 1px solid white;
-    padding: 10px 18px;
-    font-size: 15px;
+    border: none;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
     margin-left: 20px;
-    transition: 0.3s;
+    font-family: inherit;
 }
 
 #cartButton:hover {
-    background: white;
-    color: black;
+    color: #aaa;
 }
 
 #cartCount {
-    margin-left: 5px;
+    margin-left: 4px;
+
 }#cartPanel {
     position: fixed;
     top: 0;
