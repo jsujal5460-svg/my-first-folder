@@ -10,7 +10,8 @@ function scrollGallery(){
 const cartPanel = document.getElementById("cartPanel");
 const closeCart = document.getElementById("closeCart");
 
-cartButton.addEventListener("click", function () {
+cartButton.addEventListener("click", function (event) {
+    event.preventDefault();
     cartPanel.classList.add("open");
 });
 
