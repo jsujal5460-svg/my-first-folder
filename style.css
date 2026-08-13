@@ -213,11 +213,14 @@ footer{
     padding:30px;
 
 #cartButton {
+    display: inline-block;
     color: white;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
+    font-family: inherit;
     margin-left: 20px;
+    cursor: pointer;
 }
 
 #cartButton:hover {
@@ -226,6 +229,7 @@ footer{
 
 #cartCount {
     margin-left: 4px;
+
 
 
 }#cartPanel {
