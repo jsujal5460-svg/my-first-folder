@@ -275,4 +275,10 @@ nav a {
     stroke-width: 1.5;
     stroke-linecap: round;
     stroke-linejoin: round;
+}.siteLogo {
+    position: absolute;
+    top: 25px;
+    left: 35px;
+    width: 110px;
+    height: auto;
 }
