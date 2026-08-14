@@ -212,6 +212,8 @@ footer{
 
     padding:30px;
 
+}
+
 #cartButton {
     display: inline-block;
     color: white;
@@ -229,52 +231,7 @@ footer{
 
 #cartCount {
     margin-left: 4px;
-
-
-
-}#cartPanel {
-    position: fixed;
-    top: 0;
-    right: -400px;
-    width: 350px;
-    height: 100vh;
-    background: #111;
-    color: white;
-    padding: 25px;
-    box-sizing: border-box;
-    z-index: 9999;
-    transition: right 0.4s ease;
-    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.4);
 }
-
-#cartPanel.open {
-    right: 0;
-}
-
-.cartHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #444;
-    padding-bottom: 15px;
-}
-
-.cartHeader h2 {
-    margin: 0;
-}
-
-#closeCart {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-#cartItems {
-    margin-top: 25px;
-}
-/* CART PANEL */
 
 #cartPanel {
     position: fixed;
@@ -305,3 +262,7 @@ footer{
     font-size: 24px;
     cursor: pointer;
 }
+
+
+#cartItems {
+    margin-top: 25px;
