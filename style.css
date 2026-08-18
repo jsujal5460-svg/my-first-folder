@@ -76,13 +76,13 @@ header nav a:hover{
     line-height:1.8;
 }
 
-.about-text h2{
-
-   font-family: "DM Serif Display", serif;
-    font-size: 52px;
-    font-weight: 400;
-    letter-spacing: -1px;
-    margin-bottom: 30px;
+.about-text h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    background: #e60000;
+    margin-top: 12px;
 }
 
 .about-features{
