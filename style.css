@@ -1,4 +1,4 @@
-*{
+*{@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap');
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -152,6 +152,7 @@ header nav a:hover{
     font-weight: 400;
     margin-top: 5px;
 }
+
 button {
     padding: 10px 22px;
     border-radius: 20px;
