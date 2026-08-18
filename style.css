@@ -106,24 +106,26 @@ header nav a:hover{
 }
 
 .secondary-button {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 10px 24px;
+    display: block;
+    width: fit-content;
+    margin: 45px auto 0;
+    padding: 12px 32px;
     border: none;
-    border-radius: 25px;
+    border-radius: 30px;
     background: white;
     color: black;
     text-decoration: none;
     font-size: 16px;
-    transition: .3s;
+    transition: all 0.3s ease;
 }
 
-.secondary-button:hover{
-
-    background:#888;
-    color:white;
-
+.secondary-button:hover {
+    background: #e60000;
+    color: white;
+    transform: translateY(-2px);
 }
+
+
 
 .hero{
 
