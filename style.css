@@ -133,15 +133,24 @@ header nav a:hover{
 
 .heroTitle {
     font-family: "DM Serif Display", serif;
-    font-size: 58px;
-    font-weight: 400;
-    line-height: 1;
-    letter-spacing: -1px;
-    margin-bottom: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 0.9;
 }
-.heroTitle span {
+
+.lineOne {
+    display: block;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.lineTwo {
+    display: block;
+    font-size: 78px;
     font-style: italic;
     font-weight: 400;
+    margin-top: 5px;
 }
 button {
     padding: 10px 22px;
