@@ -139,7 +139,10 @@ header nav a:hover{
     letter-spacing: -1px;
     margin-bottom: 25px;
 }
-
+.heroTitle span {
+    font-style: italic;
+    font-weight: 400;
+}
 button {
     padding: 10px 22px;
     border-radius: 20px;
