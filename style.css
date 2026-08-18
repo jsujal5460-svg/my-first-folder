@@ -400,3 +400,11 @@ nav a {
 .product-card:hover .product-image {
     transform: translateY(-5px);
 }
+.product-image {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 18px;
+}
