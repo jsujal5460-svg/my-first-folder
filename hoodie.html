@@ -34,7 +34,7 @@
     <a href="shop.html">Shop</a>
     <a href="about.html">About</a>
 
-    <a href="#" id="cartButton" onclick="openCart(event)">
+    <a href="#" id="cartButton">
         🛍 <span id="cartCount">0</span>
     </a>
 </nav>
@@ -172,30 +172,8 @@ function updateCartCount() {
     document.getElementById("cartCount").textContent = totalItems;
 }
 
-function openCart(event) {
-    event.preventDefault();
 
-    const cart = JSON.parse(localStorage.getItem("sandyArveCart")) || [];
 
-    if (cart.length === 0) {
-        alert("Your bag is empty.");
-        return;
-    }
-
-    let cartText = "Your Bag:\n\n";
-
-    cart.forEach(item => {
-        cartText +=
-            item.name +
-            " - Size " +
-            item.size +
-            " - £" +
-            item.price.toFixed(2) +
-            "\n";
-    });
-
-    alert(cartText);
-}
 
 updateCartCount();
 </script>
