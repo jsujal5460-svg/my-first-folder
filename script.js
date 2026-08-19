@@ -38,16 +38,47 @@ function renderCart() {
 
     cartItems.innerHTML = "";
 
-    cart.forEach((item) => {
+    let subtotal = 0;
+
+    cart.forEach((item, index) => {
+
+        subtotal += item.price * item.quantity;
+
         cartItems.innerHTML += `
             <div class="cart-item">
+
                 <img src="${item.image}" alt="${item.name}">
-                <div>
+
+                <div class="cart-item-details">
+
                     <strong>${item.name}</strong>
+
                     <p>Size: ${item.size}</p>
+
                     <p>£${item.price.toFixed(2)}</p>
+
+                    <div class="cart-quantity">
+                        <button onclick="changeQuantity(${index}, -1)">−</button>
+                        <span>${item.quantity}</span>
+                        <button onclick="changeQuantity(${index}, 1)">+</button>
+                    </div>
+
+                    <button
+                        class="remove-item"
+                        onclick="removeCartItem(${index})">
+                        Remove
+                    </button>
+
                 </div>
+
             </div>
         `;
     });
+
+    cartItems.innerHTML += `
+        <div class="cart-summary">
+            <span>Subtotal</span>
+            <strong>£${subtotal.toFixed(2)}</strong>
+        </div>
+    `;
 }
