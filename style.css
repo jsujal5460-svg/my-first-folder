@@ -628,4 +628,9 @@ nav a {
     margin-top: 20px;
     border-top: 1px solid #ddd;
     font-size: 18px;
+}#cartCount {
+    margin-left: 5px;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
 }
