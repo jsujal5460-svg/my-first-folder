@@ -108,6 +108,9 @@
 
     </main>
 <script>
+
+let selectedSize = "";
+
 function selectSize(button) {
 
     document.querySelectorAll(".size-options button").forEach(btn => {
@@ -115,7 +118,36 @@ function selectSize(button) {
     });
 
     button.classList.add("selected-size");
+
+    selectedSize = button.textContent;
 }
+
+function addHoodieToBag() {
+
+    if (selectedSize === "") {
+        document.getElementById("bagMessage").textContent =
+            "Please select a size first.";
+        return;
+    }
+
+    const product = {
+        name: "Classic Pullover Hoodie",
+        price: 24.99,
+        size: selectedSize,
+        image: "images/hoodie-front.jpg",
+        quantity: 1
+    };
+
+    let cart = JSON.parse(localStorage.getItem("sandyArveCart")) || [];
+
+    cart.push(product);
+
+    localStorage.setItem("sandyArveCart", JSON.stringify(cart));
+
+    document.getElementById("bagMessage").textContent =
+        "Added to bag ✓";
+}
+
 </script>
 </body>
 
