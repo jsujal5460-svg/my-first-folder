@@ -81,4 +81,36 @@ function renderCart() {
             <strong>£${subtotal.toFixed(2)}</strong>
         </div>
     `;
+}function changeQuantity(index, amount) {
+
+    let cart = JSON.parse(localStorage.getItem("sandyArveCart")) || [];
+
+    cart[index].quantity += amount;
+
+    if (cart[index].quantity <= 0) {
+        cart.splice(index, 1);
+    }
+
+    localStorage.setItem("sandyArveCart", JSON.stringify(cart));
+
+    renderCart();
+
+    if (typeof updateCartCount === "function") {
+        updateCartCount();
+    }
+}
+
+function removeCartItem(index) {
+
+    let cart = JSON.parse(localStorage.getItem("sandyArveCart")) || [];
+
+    cart.splice(index, 1);
+
+    localStorage.setItem("sandyArveCart", JSON.stringify(cart));
+
+    renderCart();
+
+    if (typeof updateCartCount === "function") {
+        updateCartCount();
+    }
 }
