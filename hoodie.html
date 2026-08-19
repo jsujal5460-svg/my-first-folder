@@ -81,7 +81,7 @@
 
             <h1>Classic Pullover Hoodie</h1>
 
-            <p class="detail-price">£24.99</p>
+            <p class="detail-price">£15.99</p>
 
             <p class="detail-description">
                 A relaxed oversized hoodie made for everyday wear,
@@ -118,7 +118,7 @@
 <p id="bagMessage"></p>
 
             <div class="product-extra">
-                <p>Free delivery on orders over £40</p>
+                <p>Free delivery on orders </p>
                 <p>Easy 14-day returns</p>
             </div>
 
@@ -150,7 +150,7 @@ function addHoodieToBag() {
 
     const product = {
         name: "Classic Pullover Hoodie",
-        price: 24.99,
+        price: 15.99,
         size: selectedSize,
         image: "images/hoodie-front.jpg",
         quantity: 1
@@ -159,7 +159,7 @@ function addHoodieToBag() {
     let cart = JSON.parse(localStorage.getItem("sandyArveCart")) || [];
 
     cart.push(product);
-
+localStorage.setItem("sandyArveCart", JSON.stringify(cart));
     updateCartCount();
 
     document.getElementById("bagMessage").textContent =
