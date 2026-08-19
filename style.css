@@ -226,14 +226,11 @@ footer{
 }
 
 #cartButton {
-    display: inline-block;
-    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-    font-family: inherit;
-    margin-left: 20px;
-    cursor: pointer;
+    color: white;
 }
 
 #cartButton:hover {
@@ -241,7 +238,12 @@ footer{
 }
 
 #cartCount {
-    margin-left: 4px;
+    position: static;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    color: white;
 }
 
 #cartPanel {
