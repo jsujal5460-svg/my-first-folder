@@ -146,12 +146,47 @@ function addHoodieToBag() {
 
     cart.push(product);
 
-    localStorage.setItem("sandyArveCart", JSON.stringify(cart));
+    updateCartCount();
 
     document.getElementById("bagMessage").textContent =
         "Added to bag ✓";
 }
+function updateCartCount() {
+    const cart = JSON.parse(localStorage.getItem("sandyArveCart")) || [];
 
+    const totalItems = cart.reduce((sum, item) => {
+        return sum + item.quantity;
+    }, 0);
+
+    document.getElementById("cartCount").textContent = totalItems;
+}
+
+function openCart(event) {
+    event.preventDefault();
+
+    const cart = JSON.parse(localStorage.getItem("sandyArveCart")) || [];
+
+    if (cart.length === 0) {
+        alert("Your bag is empty.");
+        return;
+    }
+
+    let cartText = "Your Bag:\n\n";
+
+    cart.forEach(item => {
+        cartText +=
+            item.name +
+            " - Size " +
+            item.size +
+            " - £" +
+            item.price.toFixed(2) +
+            "\n";
+    });
+
+    alert(cartText);
+}
+
+updateCartCount();
 </script>
 </body>
 
