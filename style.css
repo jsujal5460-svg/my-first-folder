@@ -588,4 +588,44 @@ nav a {
     margin: 4px 0;
     font-size: 14px;
     color: #555;
+}.cart-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.cart-quantity button {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #ccc;
+    background: white;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cart-quantity span {
+    min-width: 20px;
+    text-align: center;
+}
+
+.remove-item {
+    margin-top: 10px;
+    background: none;
+    border: none;
+    color: #b00000;
+    cursor: pointer;
+    padding: 0;
+    font-size: 13px;
+}
+
+.cart-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    font-size: 18px;
 }
