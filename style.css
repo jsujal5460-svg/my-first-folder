@@ -552,4 +552,8 @@ nav a {
     .detail-main-image {
         height: 450px;
     }
+}.size-options button.selected-size {
+    background: white;
+    color: black;
+    border-color: white;
 }
