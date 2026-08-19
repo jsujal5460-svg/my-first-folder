@@ -105,7 +105,16 @@
         </section>
 
     </main>
+<script>
+function selectSize(button) {
 
+    document.querySelectorAll(".size-options button").forEach(btn => {
+        btn.classList.remove("selected-size");
+    });
+
+    button.classList.add("selected-size");
+}
+</script>
 </body>
 
 </html>
