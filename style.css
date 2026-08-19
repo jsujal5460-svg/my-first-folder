@@ -556,4 +556,8 @@ nav a {
     background: white;
     color: black;
     border-color: white;
+}#bagMessage {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #aaa;
 }
